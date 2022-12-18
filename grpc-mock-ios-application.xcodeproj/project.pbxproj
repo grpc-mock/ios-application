@@ -36,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2A9917294F7C0C00789FDC /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		5A2A9918294F7C4300789FDC /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		5A2A9919294F7C5A00789FDC /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 		5AC180102948D49A00F750F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5AF4FA99293CA4180056EB7E /* grpc-mock-ios-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grpc-mock-ios-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4FA9C293CA4180056EB7E /* grpc_mock_ios_applicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grpc_mock_ios_applicationApp.swift; sourceTree = "<group>"; };
@@ -76,9 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2A9916294F7BDB00789FDC /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5A2A9917294F7C0C00789FDC /* ci_post_clone.sh */,
+				5A2A9918294F7C4300789FDC /* ci_pre_xcodebuild.sh */,
+				5A2A9919294F7C5A00789FDC /* ci_post_xcodebuild.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		5AF4FA90293CA4180056EB7E = {
 			isa = PBXGroup;
 			children = (
+				5A2A9916294F7BDB00789FDC /* ci_scripts */,
 				5AF4FA9B293CA4180056EB7E /* grpc-mock-ios-application */,
 				5AF4FAB1293CA41B0056EB7E /* grpc-mock-ios-applicationTests */,
 				5AF4FABB293CA41B0056EB7E /* grpc-mock-ios-applicationUITests */,
