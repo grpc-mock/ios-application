@@ -1,7 +1,9 @@
 #!/bin/sh
 
-#  ci_post_xcodebuild.sh
-#  grpc-mock-ios-application
-#
-#  Created by quiver on 2022/12/19.
-#  
+# Set the -e flag to stop running the script in case a command returns
+# a nonzero exit code.
+set -e
+
+# A command or script succeeded.
+echo "A command or script was successful."
+exit 0
